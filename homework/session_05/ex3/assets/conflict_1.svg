@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 450" width="850" height="450">
+  <defs>
+    <filter id="shadow1" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+  <rect x="25" y="20" width="800" height="410" rx="10" fill="#181824" stroke="#2a2a3c" stroke-width="1.5" filter="url(#shadow1)" />
+  
+  <path d="M 25 30 Q 25 20 35 20 L 815 20 Q 825 20 825 30 L 825 58 L 25 58 Z" fill="#1f1f2e" />
+  <circle cx="48" cy="39" r="6" fill="#ff5f56" />
+  <circle cx="68" cy="39" r="6" fill="#ffbd2e" />
+  <circle cx="88" cy="39" r="6" fill="#27c93f" />
+  <text x="425" y="44" fill="#a0a0b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle" font-weight="500">
+    bash — Xung đột Rebase Lần 1 (Commit: feat: change port)
+  </text>
+  <line x1="25" y1="58" x2="825" y2="58" stroke="#2a2a3c" stroke-width="1" />
+
+  <g font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12.5" line-height="1.5">
+    <text x="50" y="90">
+      <tspan fill="#4ec9b0">user@devops-machine</tspan>
+      <tspan fill="#808080">:</tspan>
+      <tspan fill="#569cd6">~/SS05_HW03_PhanThuanThanh_176</tspan>
+      <tspan fill="#dcdcaa"> (feature-api)</tspan>
+      <tspan fill="#ffffff">$ git rebase main</tspan>
+    </text>
+
+    <text x="50" y="118" fill="#abb2bf">Auto-merging config.json</text>
+    <text x="50" y="142" fill="#e06c75" font-weight="bold">CONFLICT (content): Merge conflict in config.json</text>
+    <text x="50" y="166" fill="#e06c75">error: could not apply 6cd4204... feat: change port</text>
+    <text x="50" y="190" fill="#808080">hint: Resolve all conflicts manually, mark them as resolved with "git add &lt;file&gt;"</text>
+
+    <text x="50" y="224" fill="#61afef" font-weight="bold">--- Xung dot trong file config.json ---</text>
+    <text x="50" y="248" fill="#e5c07b">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD (nhanh main: port 8081 + env production)</text>
+    <text x="50" y="270" fill="#e06c75">  "port": 8081,</text>
+    <text x="50" y="292" fill="#abb2bf">  "debug": false,</text>
+    <text x="50" y="314" fill="#98c379">  "env": "production"</text>
+    <text x="50" y="336" fill="#e5c07b">=======</text>
+    <text x="50" y="358" fill="#61afef">  "port": 9000,</text>
+    <text x="50" y="380" fill="#abb2bf">  "debug": false</text>
+    <text x="50" y="402" fill="#e5c07b">&gt;&gt;&gt;&gt;&gt;&gt;&gt; 6cd4204 (feat: change port)</text>
+  </g>
+</svg>
